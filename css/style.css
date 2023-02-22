@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white;
+    background-color: rgb(19,34,50);
+    background-color: linear-gradient(180deg, rgba(19,34,50,1) 4%, rgba(2,77,113,1) 70%, rgba(57,115,153,1) 100%); */
+}
+
+.logo{
+width: 25%;
+}
+.carousel-index{
+    height: 50vh;
+}
+
+.container-fluid{
+justify-content: space-around;
+}
+
+.contenedor-cards{
+    display: flex;
+    padding: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sss{
+    display: flex;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+.contenedor-cards{
+    justify-content: space-between;
+}
+
+.card{
+    width: 20%;
+    text-align: center;
+}
+
+footer{
+    border: 1px solid red;
+    
+}
+
+.ppp{
+    text-align: center;
+    height: 12vh;
+}
