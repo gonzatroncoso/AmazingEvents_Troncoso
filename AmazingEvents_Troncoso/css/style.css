@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(19,34,50);
+    background-color: linear-gradient(180deg, rgba(19,34,50,1) 4%, rgba(2,77,113,1) 70%, rgba(57,115,153,1) 100%);
+}
+
+/* HOME */
+.logo{
+width: 25%;
+}
+.carousel-index{
+    height: 50vh;
+}
+.carousel{
+    margin: 20px 0px 30px 0px;
+}
+
+.container-fluid{
+justify-content: space-around;
+}
+
+.contenedor-cards{
+    display: flex;
+    padding: 30px;
+}
+
+.sss{
+    display: flex;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+.cont-form{
+    margin: 80px 0px 80px 0px;
+}
+
+
+.contenedor-cards{
+    justify-content: space-between;
+}
+
+.card{
+    width: 20%;
+    text-align: center;
+}
+
+
+.ppp{
+    text-align: center;
+    height: 12vh;
+    background-color:  black ;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.btn-busqueda{
+    color:  white ;
+    border: 1px solid  #dc046c ;
+}
+.btn-busqueda:hover{
+    color: white;
+    background-color: #dc046c;
+    background-color:  #dc046c ;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(240, 29, 159); */
+    
+}
+.contenido-footer{
+    margin: 35px 100px 0px 35px;
+}
+
+/* FIN HOME */
+
+/* UPCOMING EVENTS */
+
+/* FIN UPCOMING EVENTS */
