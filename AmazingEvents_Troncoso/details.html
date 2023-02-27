@@ -5,37 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazing Events | Details</title>
+    <link rel="shortcut icon" href="./assets/apple-touch-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid sss">
-                <div class="aaa">
-                    <img  class="logo" src="./assets/logoamazingevents.png" alt="logo de amazing events">
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container-fluid">
+        <div class="aaa">
+          <img  class="logo" src="./assets/logoamazingevents.png" alt="logo de amazing events">
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon icon-menu">MENU</span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarBasic">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./upcomingevents.html">Upcomings Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pastevents.html">Past Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./details.html">Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stats.html">Stats</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+      <div id="carouselExample" class="carousel slide">
+        <h1 class="titulo-carousel">DETAILS</h1>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+        </div>
+
+
+        <section class="posicion-card-detail">
+          <div class="contenedor-card-detail">
+            <div class="contenido-card-detail">
+              <div class="img-detail">
+                <img src="./assets/food_fair.jpg" class="ii" alt="card-horizontal-image">
+              </div>
+              <div class="">
+                <div class="card-body">
+                  <h2 class="card-title">Data</h2>
+                  <div class="lista-detail">
+                    <ul>
+                      <li>Name</li>
+                      <li>Date</li>
+                      <li>Description</li>
+                      <li>Category</li>
+                      <li>Place</li>
+                      <li>Capacity</li>
+                      <li>Assitance or estimate</li>
+                      <li>Price</li>
+                    </ul>
+
+                  </div>
                 </div>
-              <div class="collapse navbar-collapse aaa" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./events.html">Upcomings Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./events.html">Past Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./stats.html">Stats</a>
-                  </li>
-                </ul>
               </div>
             </div>
-        </nav>
-    </header>
+          </div>  
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+      <div class="contenido-footer footer-contact">
+          <a class="icon-footer" href=""><img src="./assets/icons8-instagram-48.png" alt="icono instagram"></a>
+          <a class="icon-footer" href=""><img src="./assets/icons8-facebook-48.png" alt="icono facebook"></a>
+          <a class="icon-footer" href=""><img src="./assets/icons8-whatsapp-48.png" alt="icono whatsapp"></a>
+      </div>
+      <div class="contenido-footer footer-contact">
+          <p>Cohort FE11-TM </p>
+      </div>
+  </footer>
 </body>
 </html>
