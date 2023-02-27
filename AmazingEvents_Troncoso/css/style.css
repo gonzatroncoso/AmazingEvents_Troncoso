@@ -9,8 +9,24 @@
 }
 
 /* HOME */
+navbar{
+    display: flex;
+}
+
+.container-fluid{
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
 .logo{
-width: 25%;
+width: 100%;
+
+}
+.header-logo{
+    width: 15%;    
+}
+.nav-posicion{
+flex-grow: 0 !important;
 }
 
 .nav-link{
@@ -43,17 +59,12 @@ input{
     background-color: white;
 }
 
-.container-fluid{
-justify-content: space-around;
-}
-
 .contenedor-cards{
     display: flex;
     padding: 30px;
 }
-
-.sss{
-    display: flex;
+.img-card{
+    padding: 10px;
 }
 
 form{
@@ -77,6 +88,7 @@ form{
     text-align: center;
     margin-left: 30px;
     margin-bottom: 40px;
+    box-shadow:0 0 12px #dc046c;
 }
 
 
@@ -139,9 +151,8 @@ footer{
     color: white;
     background-color: grey;
 }
-
-.footer-contact{
-    margin-top: 120px;
+.btn-form:hover{
+    box-shadow: 0 0 12px #dc046c;
 }
 
 /* FIN CONTACT */
@@ -171,10 +182,6 @@ footer{
 .img-detail{
     width: 60%;
 }
-/* .ii{
-   margin-right: 50px;
-} */
-
 .lista-detail{
     margin-left: 30px;
     text-decoration: none;
@@ -186,9 +193,8 @@ ul{
 
 /* fin details */
 
+
 /* STATS */
-
-
 .table{
     margin-top: 0px;
     width: 70%;
@@ -312,3 +318,8 @@ th{
 }
 
 /*CIERRE MEDIA QUERIE DETAIL */
+
+.icon-responsive{
+    background-color: white;
+    width: 100%;
+}
