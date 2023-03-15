@@ -36,4 +36,3 @@ for(let persona of upEvent) {
     fragment.appendChild(card);
 }
 eventoUpcoming.appendChild(fragment);
-
