@@ -19,6 +19,7 @@ function superFiltro() {
 
 const divContenedorCard = document.getElementById('createCard')
 
+
 function crearCards(events) {
     if (events.length == 0) {
         divContenedorCard.innerHTML = `<h2>No se escontraron coincidencias!</h2>`
@@ -35,7 +36,7 @@ function crearCards(events) {
                   <h2 class="card-title">${card.name}</h2>
                   <p class="card-text">${card.description}</p>
                   <p>Price: $${card.price}</p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
+                  <a href="./details.html?id=${card.id}" class="btn btn-primary">+ Info</a>
                   </div>
               </div> `          
 })
@@ -84,3 +85,9 @@ function filtroCheckbox(array) {
 
   }
   filtroCheckbox(data.events)
+
+
+
+
+
+export default {crearCards};
