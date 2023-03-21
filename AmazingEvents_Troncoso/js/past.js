@@ -1,9 +1,5 @@
 import data from "./datos.js"
 
-const fecha = data.currentDate
-let future = data.events.filter(evento => evento.date < fecha)
-
-
 let divContenedorCheck = document.getElementById('ContenedorCheck')
 const input = document.querySelector('input')
 
@@ -14,32 +10,36 @@ divContenedorCheck.addEventListener("change", superFiltro)
 function superFiltro() {
   let filtroUno = filtroTexto(data.events, input.value)
   let filtroDos = filtroCheckbox(filtroUno)
-  crearCards(filtroDos)
+  upEvents(filtroDos)
 }
-
 
 const divContenedorCard = document.getElementById('createCard')
 
-function crearCards(events) {
+// FUNCION FILTRA CHECKBOX Y INPUT DE LOS 7 UPCOMING EVENTS   ----------------------------------------------
+function upEvents(arr) {
 
+  let eventUpcoming = [];
   let cards = '';
 
-  future.forEach(card => {
-    cards += `
-          <div class="card">
-            <img src="${card.image}" class="card-img-top img-card h-40" alt="imagenes del evento">
-              <div class="card-body">
-              <h2 class="card-title">${card.name}</h2>
-              <p class="card-text">${card.description}</p>
-              <p>Price: $${card.price}</p>
-              <a href="#" class="btn btn-primary">+ Info</a>
-              </div>
-          </div> `          
+  const fecha = data.currentDate
+  eventUpcoming = arr.filter(evento => evento.date < fecha)
+
+  eventUpcoming.forEach(card => {
+    cards+= `
+    <div class="card">
+      <img src="${card.image}" class="card-img-top img-card h-40" alt="imagenes del evento">
+        <div class="card-body">
+        <h2 class="card-title">${card.name}</h2>
+        <p class="card-text">${card.description}</p>
+        <p>Price: $${card.price}</p>
+        <a href="#" class="btn btn-primary">+ Info</a>
+        </div>
+    </div> `          
 })
 
-  divContenedorCard.innerHTML = cards;
+divContenedorCard.innerHTML = cards;
 }
-crearCards(data.events)
+upEvents(data.events)
 
 
 function crearCheckbox(array) {
