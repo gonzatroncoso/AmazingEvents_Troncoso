@@ -43,8 +43,7 @@ divContenedorCard.innerHTML = cards;
 upEvents(data.events)
 // -----------------------------------------------------------------------------------------------------------
 
-
-// FUNCION CREAR CHECBOX--                      --------------------------------------------------------
+// FUNCION CREAR CHECKBOX--                      --------------------------------------------------------
 function crearCheckbox(array) {
   let arrCategory =  array.map(e => e.category) 
   let categorySet = new Set(arrCategory)

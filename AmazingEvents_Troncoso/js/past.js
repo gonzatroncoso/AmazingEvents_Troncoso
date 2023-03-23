@@ -15,7 +15,7 @@ function superFiltro() {
 
 const divContenedorCard = document.getElementById('createCard')
 
-// FUNCION FILTRA CHECKBOX Y INPUT DE LOS 7 UPCOMING EVENTS   ----------------------------------------------
+// FUNCION FILTRA CHECKBOX Y INPUT DE LOS 7 UPCOMING EVENTS   --------------------------------------------
 function upEvents(arr) {
 
   let eventUpcoming = [];
@@ -63,7 +63,6 @@ function filtroTexto(array, texto) {
    let arrFiltrados = array.filter(e => e.name.toLowerCase().includes(texto.toLowerCase()))
    return arrFiltrados
 };
-// console.log(filtroTexto);
 
 function filtroCheckbox(array) {
 

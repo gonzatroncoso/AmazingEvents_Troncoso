@@ -8,7 +8,6 @@ const beerId = params.get('id')
 
 const beer = data.events.find(beer => beer.id == beerId);
 
-
 let ContenedorCardDetail = document.querySelector('#cardDetails')
 ContenedorCardDetail.innerHTML = `
          <div class="card">

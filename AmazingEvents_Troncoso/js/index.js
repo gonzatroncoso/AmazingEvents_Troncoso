@@ -1,8 +1,6 @@
 import data from "./datos.js"
 // import crearCards from './functions.js'
 
-
-
 let divContenedorCheck = document.getElementById('ContenedorCheck')
 const input = document.querySelector('input')
 
@@ -85,9 +83,6 @@ function filtroCheckbox(array) {
 
   }
   filtroCheckbox(data.events)
-
-
-
 
 
 export default {crearCards};
